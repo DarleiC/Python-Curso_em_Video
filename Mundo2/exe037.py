@@ -1,0 +1,22 @@
+'''
+Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual será a 
+BASE DE CONVERSÃO:
+- 1 para BINÁRIO;
+- 2 para OCTAL;
+- 3 para HEXADECIMAL;
+'''
+num = int(input("informe um número: "))
+print(''' Escolha uma das bases para conversão:
+[ 1 ] converter para BINÁRIO
+[ 2 ] converter para OCTAL
+[ 3 ] converter para HEXADECIMAL''')
+opcao = int(input('Sua opção: '))
+if opcao == 1:
+    print('{} convertido para BINÁRIO é igual a {}'.format(num, bin(num)[2:]))
+elif opcao == 2:
+    print('{} convertido para octal é igual a {}'.format(num, oct(num)[2:]))
+elif opcao == 3:
+    print('{} convertido para HEXADECIMAL é igual a {}'.format(num, hex(num)[2:]))
+else:
+    print('Opcao incorreta, tente de novo')
+ 
